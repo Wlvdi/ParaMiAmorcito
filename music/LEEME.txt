@@ -1,0 +1,11 @@
+Pon aquí tus archivos MP3 (cancion1.mp3, cancion2.mp3, etc.)
+y añade los nombres en app.js en CONFIG.backgroundMusicTracks.
+
+Ejemplo en app.js:
+backgroundMusicTracks: [
+  'music/cancion1.mp3',
+  'music/cancion2.mp3',
+  'music/otra.mp3'
+]
+
+Cada vez que alguien entre en la página sonará una canción diferente (elegida al azar).

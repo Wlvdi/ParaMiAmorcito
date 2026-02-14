@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <title>Frasco de Mensajes 💖 | 14F</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <!--
+    Mural: 8 fotos en 4 filas. En styles.css busca "MURAL" y las variables --mural-1 a --mural-8.
+    Posiciones: 1=arriba izq, 2=arriba der, 3=izq, 4=der, 5=izq, 6=der, 7=abajo izq, 8=abajo der.
+  -->
+  <div class="mural" aria-hidden="true">
+    <div class="mural-photo mural-photo--1" title="Mural 1: arriba izquierda"></div>
+    <div class="mural-photo mural-photo--2" title="Mural 2: arriba derecha"></div>
+    <div class="mural-photo mural-photo--3" title="Mural 3: centro izq"></div>
+    <div class="mural-photo mural-photo--4" title="Mural 4: centro der"></div>
+    <div class="mural-photo mural-photo--5" title="Mural 5: centro izq"></div>
+    <div class="mural-photo mural-photo--6" title="Mural 6: centro der"></div>
+    <div class="mural-photo mural-photo--7" title="Mural 7: abajo izquierda"></div>
+    <div class="mural-photo mural-photo--8" title="Mural 8: abajo derecha"></div>
+  </div>
+  <div class="mural-overlay"></div>
+  <div class="particles" id="particles"></div>
+
+  <main class="app">
+    <!-- El texto del título se define en app.js → CONFIG.welcomeText -->
+    <h1 class="welcome" id="welcome">Para ti mi amorcito con todo mi corazón 💕</h1>
+
+    <div class="jar-container" id="jarContainer" role="button" aria-label="Abrir frasco y ver mensaje">
+      <div class="jar-wrapper" id="jar">
+        <div class="jar-neck"></div>
+        <div class="jar-cork"></div>
+        <div class="jar">
+          <div class="jar-glass"></div>
+          <div class="jar-inside" aria-hidden="true">
+            <div class="jar-sky"></div>
+            <div class="jar-sea"></div>
+            <div class="jar-land"></div>
+            <svg class="jar-gull jar-gull--1" viewBox="0 0 24 8" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M0 6 Q6 2 12 6 Q18 2 24 6"/></svg>
+            <svg class="jar-gull jar-gull--2" viewBox="0 0 24 8" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M0 6 Q6 2 12 6 Q18 2 24 6"/></svg>
+            <svg class="jar-gull jar-gull--3" viewBox="0 0 24 8" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M0 6 Q6 2 12 6 Q18 2 24 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint">Toca el frasco para abrirlo 💕</p>
+    <div class="counter" id="counter">—</div>
+  </main>
+
+  <div class="hearts-container" id="heartsContainer"></div>
+
+  <div class="message-overlay" id="messageOverlay">
+    <div class="message-card">
+      <img class="msg-image" id="msgImage" alt="" style="display: none;">
+      <p class="msg-text" id="msgText"></p>
+      <button type="button" class="message-close" id="messageClose">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- Widget de música (muestra qué canción suena) -->
+  <button type="button" class="music-toggle" id="musicToggle" aria-label="Ver qué suena">
+    <svg class="icon-music" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+  </button>
+  <div class="music-panel" id="musicPanel">
+    <div class="music-label"><svg class="icon-music icon-music--small" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg> Música de fondo</div>
+    <div class="now-playing" id="nowPlaying">Toca el frasco para iniciar la música</div>
+  </div>
+
+  <script src="app.js?v=1"></script>
+</body>
+</html>
