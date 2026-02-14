@@ -1,6 +1,6 @@
 // ==================== CONFIGURACIÓN (personaliza aquí) ====================
 const CONFIG = {
-  startDate: new Date(2024, 7, 10, 0, 0, 0),
+  startDate: new Date(2024, 0, 9, 0, 0, 0),
   welcomeText: 'Para ti mi amorcito con todo mi corazón 💕',
   soundPopUrl: '',
   backgroundMusicTracks: [
