@@ -40,9 +40,9 @@ const MENSAJES = [
   { type: 'text', content: 'Te amo de aqui a la luna en pasitos de tortuga 🐢' },
   // Mensajes con imagen (cambia 'image' por la URL de tu foto)
   { type: 'image', content: 'Cada salida contigo es especial, te amo demasiado mi amorcito.', image: 'fotos/9.jpeg' },
-  { type: 'image', content: 'Eres mi persona favorita en cualquier foto. No te cambaria por nada en el mundo mi amorcito.', image: 'fotos/4.jpe' },
-  { type: 'image', content: 'Cada recuerdo contigo es un tesoro que guardo en el corazón.', image: 'fotos/8.jpe' },
-  { type: 'image', content: 'Estamo como a 2.300 kilometros de distancia pero te sigo amando como si no lo fuera', image: 'fotos/6.jpe' },
+  { type: 'image', content: 'Eres mi persona favorita en cualquier foto. No te cambaria por nada en el mundo mi amorcito.', image: 'fotos/4.jpeg' },
+  { type: 'image', content: 'Cada recuerdo contigo es un tesoro que guardo en el corazón.', image: 'fotos/8.jpeg' },
+  { type: 'image', content: 'Estamo como a 2.300 kilometros de distancia pero te sigo amando como si no lo fuera', image: 'fotos/6.jpeg' },
 ];
 
 let mensajesUsados = [];
